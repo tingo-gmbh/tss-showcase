@@ -1,4 +1,4 @@
-# tss-showcase
+# TSS Showcase
 
 ## Project setup
 ```
