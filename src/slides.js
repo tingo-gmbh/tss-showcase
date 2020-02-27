@@ -12,13 +12,43 @@ export default [
   {
     id: "keyfacts",
     title: "Key Facts",
-    backgroundColor: "#999999",
+    backgroundColor: "#efefef",
+    component: KeyFacts
+  },
+  {
+    id: "modules",
+    title: "Module & Architektur",
+    backgroundColor: "#efefef",
+    component: KeyFacts
+  },
+  {
+    id: "allocator",
+    title: "Allocator",
+    backgroundColor: "#efefef",
+    component: KeyFacts
+  },
+  {
+    id: "crestron",
+    title: "Crestron",
+    backgroundColor: "#efefef",
+    component: KeyFacts
+  },
+  {
+    id: "infoscreen",
+    title: "Infoscreen",
+    backgroundColor: "#efefef",
+    component: KeyFacts
+  },
+  {
+    id: "demo",
+    title: "Demo",
+    backgroundColor: "#efefef",
     component: KeyFacts
   },
   {
     id: "outlook",
     title: "Ausblick",
-    backgroundColor: "#DDDDDD",
+    backgroundColor: "#efefef",
     component: Outlook
   }
 ];
