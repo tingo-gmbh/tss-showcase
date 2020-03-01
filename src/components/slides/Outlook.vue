@@ -1,29 +1,51 @@
 <template>
   <div class="tss-outlook" id="outlook">
-    <section>
-      <h1>Ausblick!</h1>
-    </section>
-
-    <!-- This section will reveal itself each time it's scrolled into view -->
-    <section v-scroll-reveal.reset>
-      <h1>Tada!</h1>
-    </section>
-
-    <!-- Element-specific configuration options can be passed like this -->
-    <section
-      v-scroll-reveal.reset="{ delay: 250, distance: '500px', origin: 'left' }"
-    >
-      <h1>Slightly late tada!</h1>
-    </section>
+    <v-container>
+      <v-row no-gutters justify="center">
+        <v-col cols="12">
+          <h1 class="display-4 mb-10">
+            7. Ausblick
+          </h1>
+        </v-col>
+        <v-col cols="12">
+          <ul>
+            <li class="display-2 font-weight-light pb-6">
+              REST Crestron Modul (SIMPL#)
+            </li>
+            <li class="display-2 font-weight-light pb-6">Statistikmodul</li>
+            <li class="display-2 font-weight-light pb-6">
+              Update für Version 4.0.0
+            </li>
+            <li class="display-2 font-weight-light pb-6">Showcase Website</li>
+            <li class="display-2 font-weight-light pb-6">
+              Demo-Umgebung für Kunden
+            </li>
+          </ul>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({})
+};
 </script>
 
 <style lang="scss">
 .tss-outlook {
-  padding-top: 64px;
+  padding-top: 100px;
+  color: #1d232b;
+  position: relative;
+
+  ul {
+    list-style-type: square;
+    margin-left: 24px;
+
+    li {
+      color: #3b3b3b;
+    }
+  }
 }
 </style>

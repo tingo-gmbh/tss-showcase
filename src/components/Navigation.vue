@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="secondary" dark flat>
+  <v-app-bar app color="secondary" dark flat class="tss-navigation">
     <img alt="TSS Logo" src="./../assets/logo.png" class="tss-logo mr-4" />
     <v-toolbar-title>Showcase</v-toolbar-title>
     <v-spacer></v-spacer>
@@ -34,7 +34,11 @@ export default {
 </script>
 
 <style lang="scss">
-.tss-logo {
-  height: 46px;
+.tss-navigation {
+  z-index: 1000;
+
+  .tss-logo {
+    height: 46px;
+  }
 }
 </style>
