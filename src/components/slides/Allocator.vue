@@ -3,7 +3,7 @@
     <v-container>
       <v-row no-gutters justify="center">
         <v-col cols="12">
-          <h1 class="display-4 mb-10">
+          <h1 class="display-3 mb-10 text-uppercase">
             3. Allocator
           </h1>
         </v-col>
@@ -24,15 +24,59 @@
               </li>
               <li class="headline font-weight-light pb-6">
                 Eine Buchung hat folgende Parameter:
-                <span class="font-weight-black">
-                  Datum, Uhrzeit, Anzahl Personen, Sprache, Modus
-                </span>
+                <ul>
+                  <li>
+                    <span class="font-weight-black">
+                      Datum
+                    </span>
+                  </li>
+                  <li>
+                    <span class="font-weight-black">
+                      Uhrzeit
+                    </span>
+                  </li>
+                  <li>
+                    <span class="font-weight-black">
+                      Anzahl Personen
+                    </span>
+                  </li>
+                  <li>
+                    <span class="font-weight-black">
+                      Sprache
+                    </span>
+                  </li>
+                  <li>
+                    <span class="font-weight-black">
+                      Modus
+                    </span>
+                  </li>
+                </ul>
               </li>
               <li class="headline font-weight-light pb-6">
-                3 verschiedene Buchungsmodi:
-                <span class="font-weight-black">
-                  Standard, Premium, VIP
-                </span>
+                Modi:
+                <ul>
+                  <li>
+                    <span class="font-weight-black">
+                      Standard:
+                    </span>
+                    Nächstmöglicher Zeitslot, dürfen geschoben werden,
+                    Normalfall am Terminal
+                  </li>
+                  <li>
+                    <span class="font-weight-black">
+                      Premium:
+                    </span>
+                    Standardbuchungen werden geschoben, VIP hingegen nicht,
+                    bspw. bei Carreisen
+                  </li>
+                  <li>
+                    <span class="font-weight-black">
+                      VIP:
+                    </span>
+                    Alle Vorstellungen (inkl. VIP) weden geschoben, bspw. bei
+                    hohem Besuch
+                  </li>
+                </ul>
               </li>
             </ul>
           </section>
@@ -68,6 +112,22 @@ export default {
     margin-top: -30px;
     width: 80%;
     margin-left: 20%;
+  }
+
+  ul {
+    list-style-type: square;
+
+    li {
+      ul {
+        list-style: none;
+        li:before {
+          content: "\203A";
+          margin-left: -20px;
+          margin-right: 10px;
+          font-size: 32px;
+        }
+      }
+    }
   }
 }
 </style>

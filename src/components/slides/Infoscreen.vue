@@ -13,7 +13,7 @@
         transition="fade-transition"
       ></v-carousel-item>
     </v-carousel>
-    <h1 class="display-4 mb-8">
+    <h1 class="display-3 mb-10 text-uppercase">
       5. Infoscreen
     </h1>
   </div>

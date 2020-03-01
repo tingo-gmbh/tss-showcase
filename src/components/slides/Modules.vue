@@ -1,7 +1,7 @@
 <template>
   <div class="tss-modules" id="modules">
     <img src="/images/modules.jpg" class="modules" />
-    <h1 class="display-4 mb-8">
+    <h1 class="display-3 mb-10 text-uppercase">
       2. Module
     </h1>
   </div>

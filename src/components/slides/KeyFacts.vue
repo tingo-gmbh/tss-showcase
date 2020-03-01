@@ -3,7 +3,7 @@
     <v-container>
       <v-row no-gutters justify="center">
         <v-col cols="12">
-          <h1 class="display-4 mb-10">
+          <h1 class="display-3 mb-10 text-uppercase">
             1. Key Facts
           </h1>
         </v-col>
@@ -28,8 +28,24 @@
               </li>
               <li class="headline font-weight-light mb-4">
                 <span class="font-weight-black">Mandantenfähigkeit</span>: Eine
-                Codebase, (kundenspezifische) Features werden via
-                Umgebungsvariablen zu- oder ausgeschaltet.
+                Codebase, (kundenspezifische) Features können über
+                Umgebungsvariablen zu- oder ausgeschaltet werden.
+              </li>
+              <li class="headline font-weight-light mb-4">
+                Grosse Problematik: jeder Kunde verwendet das System auf seine
+                eigene Weise.
+              </li>
+              <li class="headline font-weight-light mb-4">
+                <span class="font-weight-black">Neue Features...</span>
+                <ul>
+                  <li>
+                    werden exklusiv für Kunden entwickelt.
+                  </li>
+                  <li>
+                    werden im TSS Core integriert und somit auch für andere
+                    Kunden verfügbar gemacht.
+                  </li>
+                </ul>
               </li>
               <li class="headline font-weight-light mb-4">
                 <span class="font-weight-black">Technologie</span>: Laravel 6.x
@@ -59,7 +75,7 @@
                     Affoltern i.E.
                   </v-card-subtitle>
                   <v-card-text>
-                    Terminal, Crestron Kontroller, Infoscreens, Thermodrucker.
+                    Terminal, Crestron Control, Infoscreens, Printer.
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
@@ -75,7 +91,7 @@
                     Nottwil
                   </v-card-subtitle>
                   <v-card-text>
-                    Mailer (ActiveMailer), Exporte, ohne Manuell-Modus...
+                    Mailer (ActiveMailer), Exporte, kein Manuell-Modus...
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
@@ -97,15 +113,14 @@
               </v-timeline-item>
               <v-timeline-item>
                 <span slot="opposite" class="font-weight-black">
-                  März, 2020
+                  ab März, 2020
                 </span>
                 <v-card class="elevation-2">
                   <v-card-title>
                     Demoumgebung & Update
                   </v-card-title>
                   <v-card-text>
-                    Showcase, Factsheets und Demoversion um neue Kunden zu
-                    aquirieren.
+                    Showcase, Factsheets und Demoversion zur Kundenakquise.
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
@@ -129,6 +144,18 @@ export default {};
 
   ul {
     list-style-type: square;
+
+    li {
+      ul {
+        list-style: none;
+        li:before {
+          content: "...";
+          margin-left: -20px;
+          margin-right: 0px;
+          font-size: 32px;
+        }
+      }
+    }
   }
 }
 </style>

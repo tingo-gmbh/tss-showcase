@@ -3,7 +3,7 @@
     <v-container>
       <v-row no-gutters justify="center">
         <v-col cols="12">
-          <h1 class="display-4 mb-10">
+          <h1 class="display-3 mb-10 text-uppercase">
             7. Ausblick
           </h1>
         </v-col>

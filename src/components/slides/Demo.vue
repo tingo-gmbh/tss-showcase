@@ -1,7 +1,7 @@
 <template>
   <div class="tss-demo" id="demo">
     <img src="/images/demo.jpg" />
-    <h1 class="display-4 mb-8">
+    <h1 class="display-3 mb-10 text-uppercase">
       6. Demo
     </h1>
   </div>

@@ -3,7 +3,7 @@
     <v-container>
       <v-row no-gutters justify="center">
         <v-col cols="12">
-          <h1 class="display-4 mb-8">
+          <h1 class="display-3 mb-10 text-uppercase">
             4. Crestron
           </h1>
         </v-col>
@@ -16,19 +16,37 @@
           >
             <ul>
               <li class="headline font-weight-light pb-6">
+                <span class="font-weight-black">Mediensteuerung</span> über
+                Crestron.
+              </li>
+              <li class="headline font-weight-light pb-6">
+                <span class="font-weight-black">Verteilte Logik</span> zwischen
+                TSS und Crestron.
+              </li>
+              <li class="headline font-weight-light pb-6">
                 Zustände:
-                <span class="font-weight-black">
-                  Aus, Timeslot, Manuell, Service, Evakuierung
-                </span>
+                <ul>
+                  <li><span class="font-weight-black">Aus</span></li>
+                  <li><span class="font-weight-black">Timeslot</span></li>
+                  <li><span class="font-weight-black">Manuell</span></li>
+                  <li><span class="font-weight-black">Service</span></li>
+                  <li><span class="font-weight-black">Evakuierung</span></li>
+                </ul>
               </li>
               <li class="headline font-weight-light pb-6">
                 Ausgehende Befehle:
                 <span class="font-weight-black">
-                  Show starten, Steuerung von Lift und Türen
+                  Show starten, Steuerung von Lift und Türen...
                 </span>
               </li>
               <li class="headline font-weight-light pb-6">
-                Kommunikation über TCP oder HTTP
+                Eingehende Befehle:
+                <span class="font-weight-black">
+                  Show XY hat gestartet, Lift ist besetzt / frei...
+                </span>
+              </li>
+              <li class="headline font-weight-light pb-6">
+                Kommunikation über TCP oder HTTP.
               </li>
             </ul>
           </section>
@@ -84,5 +102,21 @@ export default {
   padding-top: 100px;
   color: #1d232b;
   position: relative;
+
+  ul {
+    list-style-type: square;
+
+    li {
+      ul {
+        list-style: none;
+        li:before {
+          content: "\203A";
+          margin-left: -20px;
+          margin-right: 10px;
+          font-size: 32px;
+        }
+      }
+    }
+  }
 }
 </style>

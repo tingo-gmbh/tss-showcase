@@ -3,7 +3,7 @@
     <v-container>
       <v-row no-gutters justify="center">
         <v-col cols="8">
-          <h1 class="display-4 mb-3"><b>Timeslot</b> System</h1>
+          <h1 class="display-4 mb-3"><b>TIMESLOT</b> SYSTEM</h1>
           <section
             v-scroll-reveal.reset="{
               distance: '500px',
@@ -11,7 +11,7 @@
             }"
           >
             <h2 class="display-1 font-weight-light ml-10 mb-4">
-              Buchungsystem &amp; Mediensteuerung
+              Besuchermanagement &amp; Mediensteurung
             </h2>
           </section>
         </v-col>
