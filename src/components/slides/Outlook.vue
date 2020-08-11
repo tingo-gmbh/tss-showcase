@@ -20,6 +20,9 @@
             <li class="display-2 font-weight-light pb-6">
               Demo-Umgebung für Kunden
             </li>
+            <li class="display-2 font-weight-light pb-6">
+              Handbuch
+            </li>
           </ul>
         </v-col>
       </v-row>
