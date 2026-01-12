@@ -1,6 +1,6 @@
 <template>
   <div class="tss-demo" id="demo">
-    <img src="/images/demo.jpg" />
+    <img :src="require('@/assets/images/demo.png')" />
     <h1 class="display-3 mb-10 text-uppercase">
       6. Demo
     </h1>
@@ -8,29 +8,29 @@
 </template>
 
 <script>
-export default {
-  data: () => ({})
-};
+  export default {
+    data: () => ({}),
+  };
 </script>
 
 <style lang="scss">
-.tss-demo {
-  color: #1d232b;
-  position: relative;
-  overflow: hidden;
+  .tss-demo {
+    color: #1d232b;
+    position: relative;
+    overflow: hidden;
 
-  img {
-    width: 100%;
-  }
+    img {
+      width: 100%;
+    }
 
-  h1 {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    z-index: 100;
-    padding: 10px 30px;
-    background: #1b3d61;
-    color: white;
+    h1 {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      z-index: 100;
+      padding: 10px 30px;
+      background: #1b3d61;
+      color: white;
+    }
   }
-}
 </style>

@@ -11,7 +11,7 @@
           <section
             v-scroll-reveal.reset="{
               distance: '500px',
-              origin: 'left'
+              origin: 'left',
             }"
           >
             <ul>
@@ -59,22 +59,19 @@
                     <span class="font-weight-black">
                       Standard:
                     </span>
-                    Nächstmöglicher Zeitslot, dürfen geschoben werden,
-                    Normalfall am Terminal
+                    Nächstmöglicher Zeitslot, dürfen geschoben werden, Normalfall am Terminal
                   </li>
                   <li>
                     <span class="font-weight-black">
                       Premium:
                     </span>
-                    Standardbuchungen werden geschoben, VIP hingegen nicht,
-                    bspw. bei Carreisen
+                    Standardbuchungen werden geschoben, VIP hingegen nicht, bspw. bei Carreisen
                   </li>
                   <li>
                     <span class="font-weight-black">
                       VIP:
                     </span>
-                    Alle Vorstellungen (inkl. VIP) weden geschoben, bspw. bei
-                    hohem Besuch
+                    Alle Vorstellungen (inkl. VIP) weden geschoben, bspw. bei hohem Besuch
                   </li>
                 </ul>
               </li>
@@ -85,10 +82,10 @@
           <section
             v-scroll-reveal.reset="{
               distance: '500px',
-              origin: 'right'
+              origin: 'right',
             }"
           >
-            <img src="/images/allocator.png" />
+            <img :src="require('@/assets/images/allocator.png')" />
           </section>
         </v-col>
       </v-row>
@@ -97,37 +94,37 @@
 </template>
 
 <script>
-export default {
-  data: () => ({})
-};
+  export default {
+    data: () => ({}),
+  };
 </script>
 
 <style lang="scss">
-.tss-allocator {
-  padding-top: 100px;
-  color: #1d232b;
-  position: relative;
+  .tss-allocator {
+    padding-top: 100px;
+    color: #1d232b;
+    position: relative;
 
-  img {
-    margin-top: -30px;
-    width: 80%;
-    margin-left: 20%;
-  }
+    img {
+      margin-top: -30px;
+      width: 80%;
+      margin-left: 20%;
+    }
 
-  ul {
-    list-style-type: square;
+    ul {
+      list-style-type: square;
 
-    li {
-      ul {
-        list-style: none;
-        li:before {
-          content: "\203A";
-          margin-left: -20px;
-          margin-right: 10px;
-          font-size: 32px;
+      li {
+        ul {
+          list-style: none;
+          li:before {
+            content: "\203A";
+            margin-left: -20px;
+            margin-right: 10px;
+            font-size: 32px;
+          }
         }
       }
     }
   }
-}
 </style>
