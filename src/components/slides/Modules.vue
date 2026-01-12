@@ -1,6 +1,6 @@
 <template>
   <div class="tss-modules" id="modules">
-    <img alt="Introduction" :src="require('@/assets/images/modules.png')" class="modules" />
+    <img src="/tss-showcase/images/modules.jpg" class="modules" />
     <h1 class="display-3 mb-10 text-uppercase">
       2. Module
     </h1>

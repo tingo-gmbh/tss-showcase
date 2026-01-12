@@ -85,7 +85,7 @@
               origin: 'right',
             }"
           >
-            <img :src="require('@/assets/images/allocator.png')" />
+            <img src="/tss-showcase/images/allocator.png" />
           </section>
         </v-col>
       </v-row>

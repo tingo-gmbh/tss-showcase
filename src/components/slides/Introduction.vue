@@ -31,7 +31,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <img alt="Introduction" :src="require('@/assets/images/allocator.png')" class="tss-image-introduction" />
+    <img alt="Introduction" src="/tss-showcase/images/introduction.png" class="tss-image-introduction" />
   </div>
 </template>
 

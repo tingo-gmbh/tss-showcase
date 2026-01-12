@@ -1,6 +1,6 @@
 <template>
   <div class="tss-demo" id="demo">
-    <img :src="require('@/assets/images/demo.png')" />
+    <img src="/tss-showcase/images/demo.jpg" />
     <h1 class="display-3 mb-10 text-uppercase">
       6. Demo
     </h1>

@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app color="secondary" dark flat class="tss-navigation">
-    <img :src="require('@/assets/logo.png')" class="tss-logo mr-4" />
+    <img alt="TSS Logo" src="/tss-showcase/assets/logo.png" class="tss-logo mr-4" />
     <v-toolbar-title>Showcase</v-toolbar-title>
     <v-spacer></v-spacer>
 
